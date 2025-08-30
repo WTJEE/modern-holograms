@@ -45,23 +45,21 @@ jobs:
       - name: Build
         run: mvn -B -ntp -DskipTests clean package
 
-      - name: Verify artifact exists
-        id: verify
+      - name: Find and upload JAR
         run: |
           JAR_FILE="modern-paper/target/modern-paper-${{ env.VERSION }}-shaded.jar"
-          echo "jar_path=$JAR_FILE" >> $GITHUB_OUTPUT
+          
           if [ ! -f "$JAR_FILE" ]; then
             echo "JAR not found: $JAR_FILE"
             echo "Contents of modern-paper/target/:"
-            ls -la modern-paper/target/ || true
+            ls -la modern-paper/target/
             exit 1
           fi
+          
           echo "Found JAR: $JAR_FILE"
           echo "Size: $(du -h "$JAR_FILE" | cut -f1)"
-
-      - name: Upload to release
-        if: github.event_name == 'release'
+          
+          # Upload to release
+          gh release upload ${{ github.event.release.tag_name }} "$JAR_FILE" --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release upload ${{ github.event.release.tag_name }} "${{ steps.verify.outputs.jar_path }}" --clobber
