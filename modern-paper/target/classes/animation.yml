@@ -1,0 +1,39 @@
+animations:
+  coinflip:
+    change-interval: 1000
+    texts:
+      - '&#CF5A44ᴄᴏɪɴ &#444DCFꜰʟɪᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰ&#444DCFʟɪᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰʟ&#444DCFɪᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰʟɪ&#444DCFᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰʟɪᴘ&#444DCF'
+  
+  rainbow:
+    change-interval: 500
+    texts:
+      - '&c&lRAINBOW'
+      - '&6&lRAINBOW'
+      - '&e&lRAINBOW'
+      - '&a&lRAINBOW'
+      - '&b&lRAINBOW'
+      - '&9&lRAINBOW'
+      - '&d&lRAINBOW'
+  
+  wave:
+    change-interval: 300
+    texts:
+      - '&b~&3~&9~&1~&9~&3~&b~'
+      - '&3~&9~&1~&9~&3~&b~&3~'
+      - '&9~&1~&9~&3~&b~&3~&9~'
+      - '&1~&9~&3~&b~&3~&9~&1~'
+      - '&9~&3~&b~&3~&9~&1~&9~'
+      - '&3~&b~&3~&9~&1~&9~&3~'
+      - '&b~&3~&9~&1~&9~&3~&b~'
+  
+  loading:
+    change-interval: 800
+    texts:
+      - '&7Loading&f.'
+      - '&7Loading&f..'
+      - '&7Loading&f...'
+      - '&7Loading&f....'

@@ -1,0 +1,14 @@
+xyz\wtje\holograms\core\model\ItemHologram.class
+xyz\wtje\holograms\core\model\ItemHologram$Transform.class
+xyz\wtje\holograms\core\model\Hologram$Billboard.class
+xyz\wtje\holograms\core\model\BlockHologram.class
+xyz\wtje\holograms\core\model\TextHologram$TextAlignment.class
+xyz\wtje\holograms\core\manager\HologramManager.class
+xyz\wtje\holograms\core\storage\HologramStorage.class
+xyz\wtje\holograms\core\model\HologramType.class
+xyz\wtje\holograms\core\adapter\VersionAdapter.class
+xyz\wtje\holograms\core\model\TextHologram.class
+xyz\wtje\holograms\core\util\VersionUtils.class
+xyz\wtje\holograms\core\config\ConfigManager.class
+xyz\wtje\holograms\core\model\Hologram.class
+xyz\wtje\holograms\core\storage\HologramStorage$1.class
