@@ -1,0 +1,43 @@
+# Animation Configuration
+# Define animated text sequences for holograms
+# Usage in hologram text: %animation:animationName%
+
+animations:
+  coinflip:
+    change-interval: 1000  # Interval in milliseconds (1000ms = 1 second)
+    texts:
+      - '&#CF5A44ᴄᴏɪɴ &#444DCFꜰʟɪᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰ&#444DCFʟɪᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰʟ&#444DCFɪᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰʟɪ&#444DCFᴘ'
+      - '&#CF5A44ᴄᴏɪɴ ꜰʟɪᴘ&#444DCF'
+  
+  rainbow:
+    change-interval: 500   # Faster animation - 0.5 seconds
+    texts:
+      - '&c&lRAINBOW'
+      - '&6&lRAINBOW'
+      - '&e&lRAINBOW'
+      - '&a&lRAINBOW'
+      - '&b&lRAINBOW'
+      - '&9&lRAINBOW'
+      - '&d&lRAINBOW'
+  
+  wave:
+    change-interval: 300   # Very fast animation - 0.3 seconds
+    texts:
+      - '&b~&3~&9~&1~&9~&3~&b~'
+      - '&3~&9~&1~&9~&3~&b~&3~'
+      - '&9~&1~&9~&3~&b~&3~&9~'
+      - '&1~&9~&3~&b~&3~&9~&1~'
+      - '&9~&3~&b~&3~&9~&1~&9~'
+      - '&3~&b~&3~&9~&1~&9~&3~'
+      - '&b~&3~&9~&1~&9~&3~&b~'
+  
+  loading:
+    change-interval: 800
+    texts:
+      - '&7Loading&f.'
+      - '&7Loading&f..'
+      - '&7Loading&f...'
+      - '&7Loading&f....'
